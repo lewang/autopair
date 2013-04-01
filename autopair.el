@@ -398,9 +398,7 @@ syntax table and the local value of `autopair-extra-pairs'."
     (define-key map [remap delete-backward-char] 'autopair-backspace)
     (define-key map [remap backward-delete-char-untabify] 'autopair-backspace)
     (define-key map (kbd "<backspace>") 'autopair-backspace)
-    (define-key map [backspace] 'autopair-backspace)
     (define-key map (kbd "DEL") 'autopair-backspace)
-    (define-key map [return] 'autopair-newline)
     (define-key map (kbd "RET") 'autopair-newline)
     (dotimes (char 256) ;; only searches the first 256 chars,
       ;; TODO: is this enough/toomuch/stupid?
